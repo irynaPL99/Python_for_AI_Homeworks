@@ -15,7 +15,13 @@ from dotenv import load_dotenv
 import os
 from requests import ReadTimeout
 
-load_dotenv()
+
+
+# Go one folder up and load .env
+from pathlib import Path
+env_path = Path(__file__).resolve().parent.parent / ".env"
+load_dotenv(dotenv_path=env_path)
+#load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 
 # Create Gemini client with timeout (milliseconds)
