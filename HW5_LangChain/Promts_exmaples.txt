@@ -1,0 +1,52 @@
+Examples:
+
+1. Multi-persona collaboration
+
+Что это? Метод, при котором один LLM создаёт разные «персоны» (роли),
+которые взаимодействуют для выполнения задачи.
+
+Почему интересно: позволяет смоделировать групповое мышление —
+полезно для комплексных заданий, где нужно учесть разные точки зрения.
+
+Пример:
+You are a team of 3 experts:
+1) Marketing Manager,
+2) Data Analyst,
+3) Product Designer.
+
+Work together step by step to solve this problem: {task}.
+Each expert must share their opinion, then agree on a final answer.
+
+
+2. Zero-shot Chain of Thought
+
+Что это? Простая версия "цепочки рассуждений":
+ты добавляешь фразу вроде "let’s think step-by-step",
+чтобы LLM объяснил ход своих мыслей перед ответом.
+
+Почему интересно: легко реализуется (даже без примеров),
+помогает получить более точные и прозрачные ответы.
+
+Пример:
+Question: If a store sells 3 apples for $2, how much will 9 apples cost?
+Let's think step by step.
+
+
+3. Prompt Chaining
+
+Что это? Разбиение задачи на несколько шагов (цепочка):
+например, сначала черновик, затем критика, затем финальное уточнение —
+каждый шаг отдельный промпт.
+
+Почему интересно: повышает качество выполнения сложных задач
+за счёт структурирования процесса и внимания к деталям на каждом этапе.
+
+Пример:
+Step 1:
+Write a draft article about the benefits of learning German for IT specialists.
+
+Step 2:
+Review the draft. Point out weak places and missing details.
+
+Step 3:
+Improve the article using your own feedback. Make the final version.

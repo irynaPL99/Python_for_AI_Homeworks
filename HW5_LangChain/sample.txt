@@ -1,0 +1,7 @@
+Artificial Intelligence (AI) is a branch of computer science.
+It tries to make machines think and learn like humans.
+AI is used in many areas today. For example, it helps doctors with medical images,
+it powers chatbots on websites, and it drives self-driving cars.
+Some people are worried that AI will take jobs.
+Other people think AI will create new jobs and make life easier.
+The future of AI is not clear, but it is very interesting.
